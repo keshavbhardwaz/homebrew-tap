@@ -11,7 +11,7 @@ speedsentry
 
 The formula compiles the app locally using Swift 5.9+ from Apple's current Command Line Tools or Xcode. The app requires macOS 13 or later; Homebrew has separate [supported-platform requirements](https://docs.brew.sh/Installation). No Developer ID certificate is needed for a local source build.
 
-SpeedSentry checks every 10 minutes by default, alerts below 20 Mbps, and retains local incident history with India Standard Time timestamps. Each full check downloads up to 8 MiB; continuously awake monitoring uses about 1.2 GB/day. This is a short throughput estimate to Cloudflare. Very slow or failed requests are recorded as unavailable, and brief drops between checks can be missed.
+SpeedSentry checks every 10 minutes by default, alerts below 20 Mbps, and retains local incident history with India Standard Time timestamps. Accurate mode starts with 8 MiB and confirms fast results with a separate 64 MiB download. This uses at most 72 MiB/check, about 10.9 GB/day while continuously awake. Enable **Low Data Mode** for one 8 MiB sample per check (about 1.2 GB/day), with less protection against short bursts. This is a short throughput estimate to Cloudflare. Very slow or failed requests are recorded as unavailable, and brief drops between checks can be missed.
 
 ## Update and remove
 
