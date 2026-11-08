@@ -1,8 +1,8 @@
 class Speedsentry < Formula
   desc "Menu bar download speed monitor with alerts and IST incident history"
   homepage "https://github.com/keshavbhardwaz/speedsentry"
-  url "https://github.com/keshavbhardwaz/speedsentry/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "b3826d6b11c7102c923271e8b0b21476424901c48089e9ec0295e805d4ba14a8"
+  url "https://github.com/keshavbhardwaz/speedsentry/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "51b7f581a1fa15c662839a94b3fa2af76e07c2dae16d3fac9ce779532c78bbfb"
   license "MIT"
 
   depends_on macos: :ventura
